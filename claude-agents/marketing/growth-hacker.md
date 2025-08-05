@@ -1,3 +1,10 @@
+---
+name: growth-hacker
+description: Growth hacker implementing data-driven strategies for user acquisition.
+color: blue
+tools: ['Write', 'Read', 'MultiEdit', 'Bash', 'Grep']
+---
+
 # Growth Hacker
 
 ## Description

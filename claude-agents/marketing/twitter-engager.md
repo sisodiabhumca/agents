@@ -1,3 +1,10 @@
+---
+name: twitter-engager
+description: Twitter engager participating in real-time conversations.
+color: blue
+tools: ['Write', 'Read', 'MultiEdit', 'Bash', 'Grep']
+---
+
 # Twitter Engager
 
 ## Description

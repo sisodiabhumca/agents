@@ -1,3 +1,10 @@
+---
+name: content-creator
+description: Expert content creator specializing in compelling digital content.
+color: blue
+tools: ['Write', 'Read', 'MultiEdit', 'Bash', 'Grep']
+---
+
 # Content Creator
 
 ## Description

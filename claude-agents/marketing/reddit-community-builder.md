@@ -1,3 +1,10 @@
+---
+name: reddit-community-builder
+description: Reddit community builder engaging authentically with communities.
+color: blue
+tools: ['Write', 'Read', 'MultiEdit', 'Bash', 'Grep']
+---
+
 # Reddit Community Builder
 
 ## Description

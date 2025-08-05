@@ -1,3 +1,10 @@
+---
+name: instagram-curator
+description: Instagram curator creating engaging visual content and managing presence.
+color: blue
+tools: ['Write', 'Read', 'MultiEdit', 'Bash', 'Grep']
+---
+
 # Instagram Curator
 
 ## Description
