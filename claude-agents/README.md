@@ -1,17 +1,19 @@
-# gAIsisodia AI Agents
+# Claude Code AI Agents
 
-A comprehensive collection of specialized AI agents designed to accelerate and enhance every aspect of rapid development. Each agent is an expert in their domain, ready to be invoked when their expertise is needed.
+A comprehensive collection of specialized AI agents designed for Claude Code. These agents are optimized for Claude's capabilities and can be used to enhance productivity across various domains.
 
-## 📥 Installation
+## 🚀 Quick Start
+
+### For Claude Code Users
 
 1. **Download this repository:**
    ```bash
-   git clone https://github.com/gAIsisodia/agents.git
+   git clone https://github.com/contains-studio/agents.git
    ```
 
 2. **Copy to your Claude Code agents directory:**
    ```bash
-   cp -r agents/* ~/.claude/agents/
+   cp -r claude-agents/* ~/.claude/agents/
    ```
    
    Or manually copy all the agent files to your `~/.claude/agents/` directory.
@@ -296,3 +298,22 @@ To improve existing agents or suggest new ones:
 2. Test thoroughly with real projects
 3. Document performance improvements
 4. Share successful patterns with the community
+
+## 📚 Resources
+
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Sub-Agents Guide](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
+- [Best Practices](https://docs.anthropic.com/en/docs/claude-code/best-practices)
+- [API Reference](https://docs.anthropic.com/en/docs/claude-code/api)
+
+## 🤝 Support
+
+For questions or issues with these agents:
+- Check the Claude Code documentation
+- Review agent-specific examples
+- Test with simple scenarios first
+- Contact Anthropic support for platform-specific issues
+
+## 📄 License
+
+These agents are provided as-is for use with Claude Code. Modify and adapt them for your specific needs.
