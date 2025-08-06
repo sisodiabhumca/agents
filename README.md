@@ -1,298 +1,266 @@
-# gAIsisodia AI Agents
+# gAIsisodia AI Agents Collection
 
-A comprehensive collection of specialized AI agents designed to accelerate and enhance every aspect of rapid development. Each agent is an expert in their domain, ready to be invoked when their expertise is needed.
+A comprehensive collection of **148 specialized AI agents** across **4 platforms** designed to accelerate and enhance every aspect of rapid development. Each agent is an expert in their domain, optimized for their specific platform.
 
-## 📥 Installation
+## 🚀 Quick Overview
 
-1. **Download this repository:**
-   ```bash
-   git clone https://github.com/gAIsisodia/agents.git
-   ```
+| Platform | Format | Agents | Status |
+|----------|--------|--------|--------|
+| **Claude Code** | Markdown + YAML | 37 | ✅ Ready |
+| **Glean** | JSON | 37 | ✅ Ready |
+| **ChatGPT** | JSON | 37 | ✅ Ready |
+| **General** | Markdown + YAML | 37 | ✅ Ready |
 
-2. **Copy to your Claude Code agents directory:**
-   ```bash
-   cp -r agents/* ~/.claude/agents/
-   ```
-   
-   Or manually copy all the agent files to your `~/.claude/agents/` directory.
+**Total: 148 agents** across all platforms
 
-3. **Restart Claude Code** to load the new agents.
+## 📥 Installation & Setup
 
-## 🚀 Quick Start
-
-Agents are automatically available in Claude Code. Simply describe your task and the appropriate agent will be triggered. You can also explicitly request an agent by mentioning their name.
-
-📚 **Learn more:** [Claude Code Sub-Agents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
-
-### Example Usage
-- "Create a new app for tracking meditation habits" → `rapid-prototyper`
-- "What's trending on TikTok that we could build?" → `trend-researcher`
-- "Our app reviews are dropping, what's wrong?" → `feedback-synthesizer`
-- "Make this loading screen more fun" → `whimsy-injector`
-
-## 📁 Directory Structure
-
-Agents are organized by department for easy discovery:
-
-```
-claude-agents/
-├── design/
-│   ├── brand-guardian.md
-│   ├── ui-designer.md
-│   ├── ux-researcher.md
-│   ├── visual-storyteller.md
-│   └── whimsy-injector.md
-├── engineering/
-│   ├── ai-engineer.md
-│   ├── backend-architect.md
-│   ├── devops-automator.md
-│   ├── frontend-developer.md
-│   ├── mobile-app-builder.md
-│   ├── rapid-prototyper.md
-│   └── test-writer-fixer.md
-├── marketing/
-│   ├── app-store-optimizer.md
-│   ├── content-creator.md
-│   ├── growth-hacker.md
-│   ├── instagram-curator.md
-│   ├── reddit-community-builder.md
-│   ├── tiktok-strategist.md
-│   └── twitter-engager.md
-├── product/
-│   ├── feedback-synthesizer.md
-│   ├── sprint-prioritizer.md
-│   └── trend-researcher.md
-├── project-management/
-│   ├── experiment-tracker.md
-│   ├── project-shipper.md
-│   └── studio-producer.md
-├── studio-operations/
-│   ├── analytics-reporter.md
-│   ├── finance-tracker.md
-│   ├── infrastructure-maintainer.md
-│   ├── legal-compliance-checker.md
-│   └── support-responder.md
-├── testing/
-│   ├── api-tester.md
-│   ├── performance-benchmarker.md
-│   ├── test-results-analyzer.md
-│   ├── tool-evaluator.md
-│   └── workflow-optimizer.md
-└── bonus/
-    ├── joker.md
-    └── studio-coach.md
+### 1. Clone the Repository
+```bash
+git clone https://github.com/sisodiabhumca/agents.git
+cd agents
 ```
 
-## 📋 Complete Agent List
+### 2. Platform-Specific Setup
 
-### Engineering Department (`engineering/`)
-- **ai-engineer** - Integrate AI/ML features that actually ship
-- **backend-architect** - Design scalable APIs and server systems
-- **devops-automator** - Deploy continuously without breaking things
-- **frontend-developer** - Build blazing-fast user interfaces
-- **mobile-app-builder** - Create native iOS/Android experiences
-- **rapid-prototyper** - Build MVPs in days, not weeks
-- **test-writer-fixer** - Write tests that catch real bugs
+#### 🎯 Claude Code Agents
+```bash
+# Copy to Claude Code agents directory
+cp -r claude-agents/* ~/.claude/agents/
 
-### Product Department (`product/`)
-- **feedback-synthesizer** - Transform complaints into features
-- **sprint-prioritizer** - Ship maximum value in 6 days
-- **trend-researcher** - Identify viral opportunities
+# Restart Claude Code to load new agents
+```
 
-### Marketing Department (`marketing/`)
-- **app-store-optimizer** - Dominate app store search results
-- **content-creator** - Generate content across all platforms
-- **growth-hacker** - Find and exploit viral growth loops
-- **instagram-curator** - Master the visual content game
-- **reddit-community-builder** - Win Reddit without being banned
-- **tiktok-strategist** - Create shareable marketing moments
-- **twitter-engager** - Ride trends to viral engagement
+#### 🔍 Glean Agents
+```bash
+# Copy to your Glean workspace
+cp -r glean-agents/* /path/to/your/glean/workspace/
+```
 
-### Design Department (`design/`)
-- **brand-guardian** - Keep visual identity consistent everywhere
-- **ui-designer** - Design interfaces developers can actually build
-- **ux-researcher** - Turn user insights into product improvements
-- **visual-storyteller** - Create visuals that convert and share
-- **whimsy-injector** - Add delight to every interaction
+#### 🤖 ChatGPT Agents
+```bash
+# Use with OpenAI API
+# See chatgpt-agents/README.md for detailed integration
+```
 
-### Project Management (`project-management/`)
-- **experiment-tracker** - Data-driven feature validation
-- **project-shipper** - Launch products that don't crash
-- **studio-producer** - Keep teams shipping, not meeting
+#### 🌐 General Agents
+```bash
+# Platform-agnostic - adapt to any AI platform
+# See general-agents/README.md for migration guides
+```
 
-### Studio Operations (`studio-operations/`)
-- **analytics-reporter** - Turn data into actionable insights
-- **finance-tracker** - Keep the studio profitable
-- **infrastructure-maintainer** - Scale without breaking the bank
-- **legal-compliance-checker** - Stay legal while moving fast
-- **support-responder** - Turn angry users into advocates
+## 📁 Repository Structure
 
-### Testing & Benchmarking (`testing/`)
-- **api-tester** - Ensure APIs work under pressure
-- **performance-benchmarker** - Make everything faster
-- **test-results-analyzer** - Find patterns in test failures
-- **tool-evaluator** - Choose tools that actually help
-- **workflow-optimizer** - Eliminate workflow bottlenecks
+```
+agents/
+├── claude-agents/          # Claude Code agents (Markdown + YAML)
+│   ├── engineering/        # 7 engineering agents
+│   ├── design/            # 5 design agents
+│   ├── marketing/         # 7 marketing agents
+│   ├── product/           # 3 product agents
+│   ├── project-management/ # 3 project management agents
+│   ├── studio-operations/  # 5 operations agents
+│   ├── testing/           # 5 testing agents
+│   ├── bonus/             # 2 bonus agents
+│   └── README.md          # Claude-specific documentation
+├── glean-agents/          # Glean platform agents (JSON)
+│   ├── [same structure]   # 37 JSON agents
+│   └── README.md          # Glean-specific documentation
+├── chatgpt-agents/        # ChatGPT platform agents (JSON)
+│   ├── [same structure]   # 37 JSON agents
+│   └── README.md          # ChatGPT-specific documentation
+├── general-agents/        # Platform-agnostic agents (Markdown)
+│   ├── [same structure]   # 37 universal agents
+│   └── README.md          # General documentation
+├── AGENTS_SUMMARY.md      # Complete collection overview
+└── README.md              # This file
+```
 
-## 🎁 Bonus Agents
-- **studio-coach** - Rally the AI troops to excellence
-- **joker** - Lighten the mood with tech humor
+## 🎯 Agent Categories
 
-## 🎯 Proactive Agents
+### Engineering Department (7 agents)
+- **ai-engineer** - AI/ML integration and implementation
+- **backend-architect** - Scalable API and server design
+- **devops-automator** - CI/CD and deployment automation
+- **frontend-developer** - Responsive UI development
+- **mobile-app-builder** - iOS/Android app development
+- **rapid-prototyper** - MVP development and prototyping
+- **test-writer-fixer** - Testing and bug fixing
 
-Some agents trigger automatically in specific contexts:
-- **studio-coach** - When complex multi-agent tasks begin or agents need guidance
-- **test-writer-fixer** - After implementing features, fixing bugs, or modifying code
-- **whimsy-injector** - After UI/UX changes
-- **experiment-tracker** - When feature flags are added
+### Design Department (5 agents)
+- **brand-guardian** - Visual identity and brand consistency
+- **ui-designer** - User interface design
+- **ux-researcher** - User research and usability testing
+- **visual-storyteller** - Visual content and storytelling
+- **whimsy-injector** - Delightful user interactions
 
-## 💡 Best Practices
+### Marketing Department (7 agents)
+- **app-store-optimizer** - App store optimization
+- **content-creator** - Multi-platform content creation
+- **growth-hacker** - Viral growth strategies
+- **instagram-curator** - Instagram content and engagement
+- **reddit-community-builder** - Reddit community management
+- **tiktok-strategist** - TikTok content strategy
+- **twitter-engager** - Twitter engagement and trends
 
-1. **Let agents work together** - Many tasks benefit from multiple agents
-2. **Be specific** - Clear task descriptions help agents perform better
-3. **Trust the expertise** - Agents are designed for their specific domains
-4. **Iterate quickly** - Agents support the 6-day sprint philosophy
+### Product Department (3 agents)
+- **feedback-synthesizer** - User feedback analysis
+- **sprint-prioritizer** - Feature prioritization
+- **trend-researcher** - Market trend identification
 
-## 🔧 Technical Details
+### Project Management (3 agents)
+- **experiment-tracker** - Data-driven experimentation
+- **project-shipper** - Project delivery and launch
+- **studio-producer** - Team coordination and execution
 
-### Agent Structure
-Each agent includes:
-- **name**: Unique identifier
-- **description**: When to use the agent with examples
-- **color**: Visual identification
-- **tools**: Specific tools the agent can access
-- **System prompt**: Detailed expertise and instructions
+### Studio Operations (5 agents)
+- **analytics-reporter** - Data analysis and insights
+- **finance-tracker** - Budget and cost management
+- **infrastructure-maintainer** - System reliability and scaling
+- **legal-compliance-checker** - Regulatory compliance
+- **support-responder** - Customer support management
+
+### Testing Department (5 agents)
+- **api-tester** - API testing and validation
+- **performance-benchmarker** - Performance optimization
+- **test-results-analyzer** - Test analysis and patterns
+- **tool-evaluator** - Tool assessment and selection
+- **workflow-optimizer** - Process optimization
+
+### Bonus Agents (2 agents)
+- **studio-coach** - Team guidance and mentorship
+- **joker** - Humor and team morale
+
+## 🚀 Quick Start Examples
+
+### Claude Code Usage
+```bash
+# In Claude Code, simply describe your task:
+"Create a new meditation app with user authentication"
+# → Triggers rapid-prototyper, backend-architect, ui-designer
+
+"Optimize our app store listing for better downloads"
+# → Triggers app-store-optimizer
+
+"Users are complaining about slow performance"
+# → Triggers infrastructure-maintainer, performance-benchmarker
+```
+
+### Glean Integration
+```json
+{
+  "agent": "ai-engineer",
+  "task": "Implement a recommendation system",
+  "context": "We have user behavior data and product catalog"
+}
+```
+
+### ChatGPT API Usage
+```python
+import openai
+
+client = openai.OpenAI(api_key="your_api_key")
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=[
+        {"role": "system", "content": "You are the AI Engineer agent..."},
+        {"role": "user", "content": "Build a recommendation system for our app"}
+    ]
+)
+```
+
+## 📚 Platform-Specific Documentation
+
+Each platform has detailed documentation:
+
+- **[Claude Agents](claude-agents/README.md)** - Claude Code integration guide
+- **[Glean Agents](glean-agents/README.md)** - Glean platform setup and usage
+- **[ChatGPT Agents](chatgpt-agents/README.md)** - OpenAI API integration
+- **[General Agents](general-agents/README.md)** - Platform-agnostic usage
+
+## 🎯 Key Features
+
+### Multi-Platform Support
+- **Claude Code**: Native integration with YAML frontmatter
+- **Glean**: JSON format with comprehensive metadata
+- **ChatGPT**: OpenAI API compatible with function calling
+- **General**: Universal format for any AI platform
+
+### Specialized Expertise
+- **37 unique agents** across 8 departments
+- **Domain-specific tools** and capabilities
+- **Real-world examples** and use cases
+- **Performance metrics** and success criteria
+
+### Rapid Development Focus
+- **6-day sprint** optimization
+- **Multi-agent workflows** for complex tasks
+- **Proactive triggering** based on context
+- **Quality assurance** and testing integration
+
+## 🔧 Customization
+
+### Agent Modification
+Each agent can be customized for your specific needs:
+
+1. **Edit YAML frontmatter** (Claude/General agents)
+2. **Modify JSON configuration** (Glean/ChatGPT agents)
+3. **Update system prompts** for your domain
+4. **Add custom tools** and capabilities
+5. **Adjust examples** for your use cases
 
 ### Adding New Agents
-1. Create a new `.md` file in the appropriate department folder
-2. Follow the existing format with YAML frontmatter
-3. Include 3-4 detailed usage examples
-4. Write comprehensive system prompt (500+ words)
-5. Test the agent with real tasks
+Follow the templates in each platform's README:
+- Use consistent naming conventions
+- Include comprehensive examples
+- Define clear success criteria
+- Test with real scenarios
 
-## 📊 Agent Performance
+## 📊 Performance Tracking
 
 Track agent effectiveness through:
-- Task completion time
-- User satisfaction
-- Error rates
-- Feature adoption
-- Development velocity
-
-## 🚦 Status
-
-- ✅ **Active**: Fully functional and tested
-- 🚧 **Coming Soon**: In development
-- 🧪 **Beta**: Testing with limited functionality
-
-## 🛠️ Customizing Agents for Your Studio
-
-### Agent Customization Todo List
-
-Use this checklist when creating or modifying agents for your specific needs:
-
-#### 📋 Required Components
-- [ ] **YAML Frontmatter**
-  - [ ] `name`: Unique agent identifier (kebab-case)
-  - [ ] `description`: When to use + 3-4 detailed examples with context/commentary
-  - [ ] `color`: Visual identification (e.g., blue, green, purple, indigo)
-  - [ ] `tools`: Specific tools the agent can access (Write, Read, MultiEdit, Bash, etc.)
-
-#### 📝 System Prompt Requirements (500+ words)
-- [ ] **Agent Identity**: Clear role definition and expertise area
-- [ ] **Core Responsibilities**: 5-8 specific primary duties
-- [ ] **Domain Expertise**: Technical skills and knowledge areas
-- [ ] **Studio Integration**: How agent fits into 6-day sprint workflow
-- [ ] **Best Practices**: Specific methodologies and approaches
-- [ ] **Constraints**: What the agent should/shouldn't do
-- [ ] **Success Metrics**: How to measure agent effectiveness
-
-#### 🎯 Required Examples by Agent Type
-
-**Engineering Agents** need examples for:
-- [ ] Feature implementation requests
-- [ ] Bug fixing scenarios
-- [ ] Code refactoring tasks
-- [ ] Architecture decisions
-
-**Design Agents** need examples for:
-- [ ] New UI component creation
-- [ ] Design system work
-- [ ] User experience problems
-- [ ] Visual identity tasks
-
-**Marketing Agents** need examples for:
-- [ ] Campaign creation requests
-- [ ] Platform-specific content needs
-- [ ] Growth opportunity identification
-- [ ] Brand positioning tasks
-
-**Product Agents** need examples for:
-- [ ] Feature prioritization decisions
-- [ ] User feedback analysis
-- [ ] Market research requests
-- [ ] Strategic planning needs
-
-**Operations Agents** need examples for:
-- [ ] Process optimization
-- [ ] Tool evaluation
-- [ ] Resource management
-- [ ] Performance analysis
-
-#### ✅ Testing & Validation Checklist
-- [ ] **Trigger Testing**: Agent activates correctly for intended use cases
-- [ ] **Tool Access**: Agent can use all specified tools properly
-- [ ] **Output Quality**: Responses are helpful and actionable
-- [ ] **Edge Cases**: Agent handles unexpected or complex scenarios
-- [ ] **Integration**: Works well with other agents in multi-agent workflows
-- [ ] **Performance**: Completes tasks within reasonable timeframes
-- [ ] **Documentation**: Examples accurately reflect real usage patterns
-
-#### 🔧 Agent File Structure Template
-
-```markdown
----
-name: your-agent-name
-description: Use this agent when [scenario]. This agent specializes in [expertise]. Examples:\n\n<example>\nContext: [situation]\nuser: "[user request]"\nassistant: "[response approach]"\n<commentary>\n[why this example matters]\n</commentary>\n</example>\n\n[3 more examples...]
-color: agent-color
-tools: Tool1, Tool2, Tool3
----
-
-You are a [role] who [primary function]. Your expertise spans [domains]. You understand that in 6-day sprints, [sprint constraint], so you [approach].
-
-Your primary responsibilities:
-1. [Responsibility 1]
-2. [Responsibility 2]
-...
-
-[Detailed system prompt content...]
-
-Your goal is to [ultimate objective]. You [key behavior traits]. Remember: [key philosophy for 6-day sprints].
-```
-
-#### 📂 Department-Specific Guidelines
-
-**Engineering** (`engineering/`): Focus on implementation speed, code quality, testing
-**Design** (`design/`): Emphasize user experience, visual consistency, rapid iteration  
-**Marketing** (`marketing/`): Target viral potential, platform expertise, growth metrics
-**Product** (`product/`): Prioritize user value, data-driven decisions, market fit
-**Operations** (`studio-operations/`): Optimize processes, reduce friction, scale systems
-**Testing** (`testing/`): Ensure quality, find bottlenecks, validate performance
-**Project Management** (`project-management/`): Coordinate teams, ship on time, manage scope
-
-#### 🎨 Customizations
-
-Modify these elements for your needs:
-- [ ] Adjust examples to reflect your product types
-- [ ] Add specific tools agents have access to
-- [ ] Modify success metrics for your KPIs
-- [ ] Update department structure if needed
-- [ ] Customize agent colors for your brand
+- **Task completion time**
+- **User satisfaction scores**
+- **Error rates and fixes**
+- **Feature adoption metrics**
+- **Development velocity**
 
 ## 🤝 Contributing
 
-To improve existing agents or suggest new ones:
-1. Use the customization checklist above
-2. Test thoroughly with real projects
-3. Document performance improvements
-4. Share successful patterns with the community
+We welcome contributions to improve the agent collection:
+
+1. **Test agents** with real projects
+2. **Report issues** or suggest improvements
+3. **Add new agents** following the templates
+4. **Share successful patterns** with the community
+
+### Contribution Guidelines
+- Follow existing naming conventions
+- Include comprehensive examples
+- Test thoroughly before submitting
+- Update documentation accordingly
+
+## 📄 License
+
+This project is open source. See individual platform READMEs for specific licensing information.
+
+## 🆘 Support
+
+- **Issues**: Report bugs or request features via GitHub Issues
+- **Documentation**: Check platform-specific READMEs
+- **Community**: Share experiences and best practices
+
+## 🔄 Recent Updates
+
+- ✅ **YAML parsing fixed** - All Claude agents now parse correctly
+- ✅ **Multi-platform support** - 148 agents across 4 platforms
+- ✅ **Author updates** - All references updated to gAIsisodia
+- ✅ **Clean structure** - Organized directory layout
+- ✅ **Comprehensive docs** - Platform-specific guides
+
+---
+
+**Repository**: [https://github.com/sisodiabhumca/agents](https://github.com/sisodiabhumca/agents)  
+**Author**: gAIsisodia  
+**Last Updated**: December 2024  
+**Version**: 2.0.0
